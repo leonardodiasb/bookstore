@@ -1,7 +1,7 @@
-import BookSection from "./books/BookSection";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import BookSection from './books/BookSection';
 import Navbar from './Navbar';
-import Categories from './categories/Categories'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';  
+import Categories from './categories/Categories';
 
 function App() {
   return (
