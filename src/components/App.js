@@ -9,7 +9,7 @@ function App() {
       <Router>
         <Navbar />
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             <BookSection />
           </Route>
           <Route path="/categories">

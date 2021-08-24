@@ -12,7 +12,7 @@ const BookList = () => {
   return (
     <ul className="book-list">
       {bookstore.map((book) => (
-        <li key={book.item_id}>
+        <li key={book.id}>
           <Book genre={book.genre} title={book.title} author={book.author} />
         </li>
       ))}
