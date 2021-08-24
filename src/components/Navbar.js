@@ -4,12 +4,12 @@ import { NavLink } from 'react-router-dom';
 const Navbar = () => {
   const links = [
     {
-      id: 1,
+      id: 'books',
       path: '/',
       text: 'BOOKS',
     },
     {
-      id: 2,
+      id: 'categories',
       path: '/categories',
       text: 'CATEGORIES',
     },
