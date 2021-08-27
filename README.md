@@ -19,6 +19,7 @@
 - `git clone https://github.com/leonardodiasb/bookstore.git`
 - `cd bookstore`
 - `npm install`
+- `npm install axios`
 - `npm start`
 
 ## Author
