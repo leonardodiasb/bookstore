@@ -12,23 +12,33 @@ const Book = ({ title, author }) => {
   };
 
   return (
-    <div>
+    <div className="book-li">
       <div className="book-info">
-        <span className="book-title">{title}</span>
-        <span className="book-author">{author}</span>
+        <p className="book-title">{title}</p>
+        <p className="book-author">{author}</p>
         <div className="book-btns">
           <button type="button">Comments</button>
+          <vr className="vr" />
           <button type="button" onClick={removeBookFromStore}>Remove</button>
+          <vr className="vr" />
           <button type="button">Edit</button>
         </div>
       </div>
       <div className="progress-info">
-        <p className="percentage">0% Completed</p>
+        <div className="bar-container">
+          <div className="bar bar-background" />
+          <div className="bar bar-completion" />
+        </div>
+        <div>
+          <span className="Percent-Complete">25%</span>
+          <p className="Completed">Completed</p>
+        </div>
       </div>
+      <vr className="vr division-line" />
       <div className="chapter-info">
-        <p className="current">CURRENT CHAPTER</p>
-        <p className="chapter">Chapter 0</p>
-        <button type="button" className="updating">UPDATE PROGRESS</button>
+        <p className="current-chapter">CURRENT CHAPTER</p>
+        <p className="current-lesson">Chapter 0</p>
+        <button type="button" className="update-progress">UPDATE PROGRESS</button>
       </div>
     </div>
   );

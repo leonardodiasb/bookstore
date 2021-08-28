@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import loginImg from '../assets/userIcon.svg';
 
 const Navbar = () => {
   const links = [
@@ -17,10 +18,10 @@ const Navbar = () => {
 
   return (
     <nav>
-      <h1>Bookstore CMS</h1>
+      <h1 className="logo">Bookstore CMS</h1>
       <ul className="nav-list">
         {links.map((link) => (
-          <li key={link.id} className="nav-li">
+          <li key={link.id} className="nav-li" id={link.id}>
             <NavLink
               to={link.path}
               activeClassName="active-link"
@@ -31,6 +32,10 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
+      <div className="empty" />
+      <div className="Oval">
+        <img src={loginImg} alt="login icon" />
+      </div>
     </nav>
   );
 };

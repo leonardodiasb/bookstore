@@ -17,11 +17,13 @@ const InputBook = () => {
   };
 
   return (
-    <form onSubmit={submitBookToStore}>
-      <h2>ADD NEW BOOK</h2>
-      <input name="title" placeholder="Book Title" />
-      <input name="author" placeholder="Author" />
-      <button type="submit">ADD BOOK</button>
+    <form className="input-form" onSubmit={submitBookToStore}>
+      <h2 className="form-title">ADD NEW BOOK</h2>
+      <div>
+        <input className="input-title" name="title" placeholder="Book Title" />
+        <input className="input-author" name="author" placeholder="Author" />
+        <button className="add-btn" type="submit">ADD BOOK</button>
+      </div>
     </form>
   );
 };

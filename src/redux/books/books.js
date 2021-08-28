@@ -54,7 +54,7 @@ const reducer = (state = [], action) => {
     case REMOVE_BOOK:
       return state.filter((book) => book.item_id !== action.payload);
     case SET_BOOKS:
-      return [...state, ...action.payload];
+      return [...action.payload];
     default:
       return state;
   }
