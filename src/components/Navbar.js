@@ -21,7 +21,7 @@ const Navbar = () => {
       <h1 className="logo">Bookstore CMS</h1>
       <ul className="nav-list">
         {links.map((link) => (
-          <li key={link.id} className="nav-li">
+          <li key={link.id} className="nav-li" id={link.id}>
             <NavLink
               to={link.path}
               activeClassName="active-link"

@@ -25,8 +25,14 @@ const Book = ({ title, author }) => {
         </div>
       </div>
       <div className="progress-info">
-        <span className="Percent-Complete">0%</span>
-        <p className="Completed">Completed</p>
+        <div className="bar-container">
+          <div className="bar bar-background" />
+          <div className="bar bar-completion" />
+        </div>
+        <div>
+          <span className="Percent-Complete">25%</span>
+          <p className="Completed">Completed</p>
+        </div>
       </div>
       <vr className="vr division-line" />
       <div className="chapter-info">
