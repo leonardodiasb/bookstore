@@ -40,10 +40,6 @@ Feel free to check the [issues page](https://github.com/leonardodiasb/bookstore/
 
 Give a ⭐️ if you like this project!
 
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
-
 ## Issues
 
 https://github.com/leonardodiasb/bookstore/issues
