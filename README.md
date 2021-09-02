@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# bookstore
+# Bookstore
 
-> 
+> A Bookstore website where it's possible to add, remove a book and the book list is displayed. The app was created using React and Redux.
 
 ## Built With
 
